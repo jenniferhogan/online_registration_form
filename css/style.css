@@ -1,0 +1,213 @@
+/* Base Styles -------------------- */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  color: #a4a9ae;
+  font-weight: 300;
+}
+
+h1,
+h2,
+legend {
+  font-weight: 400;
+  font-size: 1.4em;
+}
+
+h1 {
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #2d3945;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+h2,
+legend {
+  color: #2d3945;
+  padding-bottom: 10px;
+}
+
+p {
+  margin-top: -10px; 
+  padding-bottom: 15px;
+}
+
+p.legal {
+  color: #9da3a8;
+  font-style: italic;
+  font-size: .8em;
+  margin-top: 20px;
+}
+
+header,
+footer,
+.intro {
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  margin-bottom: -10px;
+}
+
+.container,
+.intro {
+  margin: 10px auto;
+  padding: 10px 10px;
+}
+
+.intro {
+  border-bottom: 4px solid #2d3945;
+  margin-bottom: 4px;
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+/* Form Styles -------------------- */
+
+legend {
+  margin-bottom: 10px;
+  padding-top: 30px;
+  border-top: 2px solid #2d3945;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  border: 2px solid #eff0f1;
+  font-size: 16px;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #eff0f1;
+  color: #a4a9ae;
+  margin-bottom: 30px;
+  border-radius: 3px;
+}
+
+select {
+  height: 50px;
+}
+
+input:focus { 
+    border: 2px solid #2d3945;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    display:none;
+    margin: 10px;
+}
+
+input[type="checkbox"] + label span,
+input[type="radio"] + label span {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+  }
+
+input[type="checkbox"] + label span {
+    background: url(../img/checkbox.jpg) left top no-repeat;
+}
+
+input[type="checkbox"]:checked + label span {
+    background: url(../img/checkbox_checked.jpg) left top no-repeat;
+}
+
+input[type="radio"] + label span {
+    background: url(../img/radio.jpg) top no-repeat;
+}
+
+input[type="radio"]:checked + label span {
+    background: url(../img/radio_selected.jpg) top no-repeat;
+}
+
+
+::-webkit-input-placeholder {
+  text-align: right;
+  font-style: italic;
+}
+
+:-moz-placeholder {
+  text-align: right;
+  font-style: italic;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #2d3945;
+}
+
+.label_top {
+  margin-top: 30px;
+}
+
+
+button {
+  display: block;
+  padding: 20px 20px;
+  color: #FFF;
+  background-color: #4ebbb5;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+}
+
+fieldset {
+  margin-bottom: -10px;
+  border: none;
+}
+
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+@media screen and (min-width: 760px) {
+
+.container {
+  max-width: 800px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: 80%;
+}
+
+label[for="name"],
+label[for="email"],
+label[for="phone"],
+label[for="address"],
+label[for="city"],
+label[for="state"],
+label[for="zip"] {
+  float: left;
+  display: inline-block;
+  width: 20%;
+  line-height: 50px;
+}
+
+}
